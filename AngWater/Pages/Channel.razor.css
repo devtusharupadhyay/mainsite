@@ -1,0 +1,71 @@
+﻿.tr-suffix {
+    font-size: 10px;
+}
+
+.tr-fs13 {
+    font-size: 13.5px;
+}
+
+.tr-fs50 {
+    font-size: 50px;
+}
+
+.ts-grey {
+    background-color: #c4c0c0;
+}
+
+.ts-yellow {
+    background-color: #fcfca7;
+    border-color: #c4c0c0;
+}
+.ts-orange {
+    background-color: #faac5a;
+   /* background-color: #FFA500;*/
+    border-color: #c4c0c0;
+}
+
+.tr-footer {
+    padding: 10px 5px 10px 10px;
+    width: 100%;
+    background: white;
+}
+
+.tr-fcblue {
+    color: #2089ba;
+}
+
+.tr-fclblue {
+    color: #91d9ed;
+}
+
+.tr-bgblue {
+    background-color: #2089ba;
+}
+
+.tr-iframe-stream {
+    width: 100%;
+    height: 65vh;
+}
+
+.tr-vh-100{
+    height: 50vh;
+}
+
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+.tr-header-channel-selected {
+    
+    background-color: #2089ba;
+}
+
+/*.tr-footer-channel-selected{
+    border-color: black;
+}*/
+

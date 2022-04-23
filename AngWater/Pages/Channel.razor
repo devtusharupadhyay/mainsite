@@ -1,0 +1,185 @@
+﻿@page "/channel/{Id:int}"
+@page "/mainsite/channel/{Id:int}"
+@layout EmptyLayout
+
+<div class="tr-vh-100">
+
+    <div class="row mx-auto">
+        <div class="col-12 col-lg-2">
+            <div class="pt-4 text-center">
+                <h6 class="mb-0"><b>Now Watching</b></h6>
+                <h3 class="tr-fcblue"><b>Happier</b></h3>
+            </div>
+        </div>
+        <div class="col-12 col-lg-10">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 border border-5 @(ActiveChannel == Tabs.Channel1? "tr-header-channel-selected": "ts-grey" )">
+                    <a href="/mainsite/channel/1" class="text-center p-3 ">
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Channel1 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <div class="tr-fs13 @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Understanding burn out</div>
+                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Deliverd by mental health at work</div>
+                    </a>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 ts-grey border border-5 @(ActiveChannel == Tabs.Channel2? "tr-header-channel-selected": "ts-grey" )">
+                    <a href="/mainsite/channel/2" class="text-center p-3 ">
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Channel2 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <div class="tr-fs13 @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Supporting your colleagues with mental health</div>
+                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Deliverd by IPRS</div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 ts-grey border border-5 @(ActiveChannel == Tabs.Channel3? "tr-header-channel-selected": "ts-grey" )">
+                    <a href="/mainsite/channel/3" class="text-center p-3 ">
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Channel3 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <div class="tr-fs13 @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Re-set yourself with a mindfullness workshop </div>
+                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Deliverd by IPRS</div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 ts-grey border border-5 @(ActiveChannel == Tabs.Channel4? "tr-header-channel-selected": "ts-grey" )">
+                    <a href="/mainsite/channel/4" class="text-center p-3 ">
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Channel4 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <div class="tr-fs13 @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Managing the cost of living</div>
+                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Deliverd by Salary Finance and Supported</div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mx-auto tr-bgblue  p-4 m-1 ">
+
+        <div class="row mx-auto  bg-white">
+            <div class="col-sm-10 col-md-7 col-lg-9">
+                <div class=" text-center">
+                    <div class="" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+                        <iframe src="@ChannelURI"
+                                width="100%" height="100%"
+                                style="position:absolute; top:0; left: 0"
+                                webkitallowfullscreen="true"
+                                allowfullscreen="true"
+                                frameborder="0"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-5 col-lg-3 text-center bg-white" style="color: hsl(302deg 33% 54%); font-size: small; text-align: justify;">
+                <iframe src="https://video.ibm.com/socialstream/24088760?videos=0&amp;theme=g10&amp;messageVerticalSpacing=default&amp;mainLinkColor=0f62fe&amp;moderatorNameColor=d12771"
+                        style="border: 0;width: 100%; height: 100%; "
+                        webkitallowfullscreen="true"
+                        allowfullscreen="true"
+                        frameborder="0"
+                        class=""
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+
+        @*        <div class="row mx-auto bg-white">
+        <div class="col-12 col-md-12 col-lg-12">
+        <div class="card text-center " style="background:snow ">
+        <div class="card-body" style="width: 100%">
+        <iframe src="https://video.ibm.com/combined-embed/24088760?theme=g10&messageVerticalSpacing=default&mainLinkColor=0f62fe&moderatorNameColor=d12771"
+        style="border: 0;" webkitallowfullscreen="" allowfullscreen="" frameborder="no" class="tr-iframe-stream "
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        </div>
+
+        </div>*@
+
+    </div>
+
+    <div class="tr-footer">
+        <div class="row ">
+            <div class="col-12 col-md-12 col-lg-2">
+                <div class="row ">
+                    <div class="col-12 pe-0 text-center">
+                        <img src="images/logo_life_circle.png" style="height:100px" />
+                    </div>
+                   @* <div class="col-6 ps-0 pt-3">
+                        <h6 class="mb-0"><b>Up Next</b></h6>
+                        <h3 class="text-primary pb-0 mb-0"><b>Healthier</b></h3>
+                        <a class="tr-suffix pt-0"> View full Schedule  </a>
+                    </div>*@
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-8">
+                <div class="row bg-white text-center">
+                    <div class="col-12 col-md-6 col-lg-3 p-0">
+                        <div class=" ts-yellow border border-5 @(BottomChannelId == 1? "border-dark":"")">
+                            <div class="text-center p-3 " @onclick="() => BottomChannelClicked(1)">
+                                <h5 class="mb-0">Channel1  </h5>
+                                <div class="tr-fcblue"><b>Building on your fitness</b></div>
+                                <div class="tr-suffix">Deliverd by mental health at work</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 p-0">
+                        <div class=" ts-yellow border border-5 @(BottomChannelId == 2? "border-dark":"")">
+                            <div class="text-center p-3" @onclick="() => BottomChannelClicked(2)">
+
+                                <h5 class="mb-0">Channel2  </h5>
+                                <div class="tr-fcblue"><b>Strech and flex</b></div>
+                                <div class="tr-suffix">Deliverd by IPRS</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 p-0">
+                        <div class=" ts-yellow border border-5 @(BottomChannelId == 3? "border-dark":"")">
+                            <div class="text-center p-3" @onclick="() => BottomChannelClicked(3)">
+                                <h5 class="mb-0">Channel3  </h5>
+                                <div class="tr-fcblue"><b>Healthy lifestyle </b></div>
+                                <div class="tr-suffix">Deliverd by IPRS</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 p-0   ">
+                        <div class=" ts-yellow border border-5 @(BottomChannelId == 4? "border-dark":"")">
+
+                            <div class="text-center p-3" @onclick="() => BottomChannelClicked(4)">
+                                <h5 class="mb-0">Channel4  </h5>
+                                <div class="tr-fcblue"><b>Managing lower back pain</b></div>
+                                <div class="tr-suffix">Deliverd by Salary Finance and Supported</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-md-12 col-lg-2 ">
+                <div class="text-center">
+                   
+                    <div class=" row text-center m-1 px-4">
+                        <button type="button" class="btn ts-yellow mx-auto ">Help</button>
+                    </div>
+
+                    <div class=" row text-center m-1  px-4">
+                        <a href="/agenda" class="btn ts-yellow mx-auto "><b>Agenda</b></a>
+                    </div>
+                   
+                    <div class="row px-4 m-1 ">
+                    <img src="images/logo_love-every-drop.png" class="" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+

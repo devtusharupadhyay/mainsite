@@ -1,0 +1,71 @@
+.tr-suffix[b-xoln896wtk] {
+    font-size: 10px;
+}
+
+.tr-fs13[b-xoln896wtk] {
+    font-size: 13.5px;
+}
+
+.tr-fs50[b-xoln896wtk] {
+    font-size: 50px;
+}
+
+.ts-grey[b-xoln896wtk] {
+    background-color: #c4c0c0;
+}
+
+.ts-yellow[b-xoln896wtk] {
+    background-color: #fcfca7;
+    border-color: #c4c0c0;
+}
+.ts-orange[b-xoln896wtk] {
+    background-color: #faac5a;
+   /* background-color: #FFA500;*/
+    border-color: #c4c0c0;
+}
+
+.tr-footer[b-xoln896wtk] {
+    padding: 10px 5px 10px 10px;
+    width: 100%;
+    background: white;
+}
+
+.tr-fcblue[b-xoln896wtk] {
+    color: #2089ba;
+}
+
+.tr-fclblue[b-xoln896wtk] {
+    color: #91d9ed;
+}
+
+.tr-bgblue[b-xoln896wtk] {
+    background-color: #2089ba;
+}
+
+.tr-iframe-stream[b-xoln896wtk] {
+    width: 100%;
+    height: 65vh;
+}
+
+.tr-vh-100[b-xoln896wtk]{
+    height: 50vh;
+}
+
+
+a:hover[b-xoln896wtk], a:visited[b-xoln896wtk], a:link[b-xoln896wtk], a:active[b-xoln896wtk] {
+    text-decoration: none;
+}
+
+a[b-xoln896wtk]{
+    color: black;
+}
+
+.tr-header-channel-selected[b-xoln896wtk] {
+    
+    background-color: #2089ba;
+}
+
+/*.tr-footer-channel-selected{
+    border-color: black;
+}*/
+

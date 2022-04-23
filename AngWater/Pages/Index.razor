@@ -1,0 +1,131 @@
+﻿@page "/"
+@page "/mainsite"
+
+@layout EmptyLayout
+
+<div>
+
+    <img src="images/compress-login-image.jpg" class="d-block d-xl-none img-fluid position-relative" />
+
+
+    <img src="images/imgpsh-fullsize-anim.jpg" class="d-none d-xl-block img-fluid position-relative" />
+
+    <div class="position-absolute top-25">
+        <div class="mt-5">
+            <div class="row mx-auto">
+                <div class="col-12 col-md-1 col-lg-2">
+                </div>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-2">
+                        <div class="row mx-auto">
+                            <div class="col-12 col-lg-7">
+
+                                <EditForm OnValidSubmit="LoginUser" Model="_loginViewModel">
+                                    <DataAnnotationsValidator />
+                                    <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-4 m-5">
+                                        <h4>
+                                            Please login to proceed
+                                        </h4>
+                                        <div class="mb-2">
+                                            <span class="d-inline">
+                                                Name
+                                                <input type="text" class="form-control d-inline" @bind-value="_loginViewModel.Name" />
+                                            </span>
+                                            <div>
+                                                <ValidationMessage For="() => _loginViewModel.Name" />
+
+                                            </div>
+
+                                        </div>
+                                        <span class="d-inline">Email Address</span>
+                                        <input type="email" class="form-control" @bind-value="_loginViewModel.EmailAddress" />
+
+                                        <div>
+                                            <ValidationMessage For="() => _loginViewModel.EmailAddress" />
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <button type="submit" class="btn tr-btn mb-5">Login</button>
+                                        </div>
+
+                                    </div>
+                                </EditForm>
+
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="p-4">
+                                    <h4 class="tr-purple tr-fs-16"><b>Welcome to your Time out for LIFE 2022 virtual event.</b></h4>
+                                    <span class="tr-purple mt-4 tr-fs-12">
+                                        Looking after our wellbeing has never been so important – being happy and healthy can help us make better and safer choices.
+                                        <br />
+
+                                        We hope you enjoy your session today and feel better equipped to make the right decisions to support your health, safety and wellbeing as well as learn some practical tips and guidance to build confidence in supporting yourself and your colleagues.
+                                        <br />
+
+                                        These sessions are live and will start at the published time in the agenda. You can join them by selecting from the agenda or click on "watch now"
+                                        <br />
+
+                                        If you decide to change channels to view an alternative session after it has started, you will not be able to watch it from the start.
+                                        <br />
+
+                                        IMPORTANT
+                                        Please do not join your session in Citrix (Agile).
+                                        If your video is muted you will need to ‘click to unmute’ above the video box.
+                                        <br />
+                                        If we have any technical issues we will let you know in your specific sessions.
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 text-center text-md-start">
+
+                                <label class="my-auto"><b>Happier. <br /> Healthier.<br /> Safer.</b></label>
+
+                                <span>
+                                    <img src="images/logo_life_circle.png" />
+                                </span>
+                            </div>
+                            <div class="col-12 col-lg-6 ">
+                                <div class="align-bottom text-md-end text-center">
+                                    <img src="images/logo_love-every-drop.png" style="height:100px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1 col-lg-2">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<style>
+    .top-25 {
+        top: 25%;
+        z-index: 1000;
+    }
+
+    .responsive {
+    }
+
+    .tr-fs-12{
+        font-size: 12px;
+    }
+
+    .tr-fs-16{
+        font-size: 16px;
+    }
+</style>
+
+
+
