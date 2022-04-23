@@ -65,9 +65,10 @@ a {
     background-color: #2089ba;
 }
 
-/*.tr-footer-channel-selected{
-    border-color: black;
-}*/
+.tr-footer-channel-selected {
+    background-color: #2089ba;
+    color: white;
+}
 
 
 .tr-fs-8 {
