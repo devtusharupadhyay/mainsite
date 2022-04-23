@@ -15,31 +15,31 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3 p-0 border border-5 @(ActiveChannel == Tabs.Channel1? "tr-header-channel-selected": "ts-grey" )">
                     <a href="/mainsite/channel/1" class="text-center p-3 ">
-                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Channel1 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Channel 1 <span class="bg-danger text-white">LIVE</span> </h5>
                         <div class="tr-fs13 @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Understanding burn out</div>
-                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Delivered by mental health at work</div>
+                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel1? "text-white": "" )">Delivered by Mental Health at work</div>
                     </a>
 
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 p-0 ts-grey border border-5 @(ActiveChannel == Tabs.Channel2? "tr-header-channel-selected": "ts-grey" )">
                     <a href="/mainsite/channel/2" class="text-center p-3 ">
-                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Channel2 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Channel 2 <span class="bg-danger text-white">LIVE</span> </h5>
                         <div class="tr-fs13 @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Supporting your colleagues with mental health</div>
                         <div class="tr-suffix @(ActiveChannel == Tabs.Channel2? "text-white": "" )">Delivered by IPRS</div>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 p-0 ts-grey border border-5 @(ActiveChannel == Tabs.Channel3? "tr-header-channel-selected": "ts-grey" )">
                     <a href="/mainsite/channel/3" class="text-center p-3 ">
-                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Channel3 <span class="bg-danger text-white">LIVE</span> </h5>
-                        <div class="tr-fs13 @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Re-set yourself with a mindfullness workshop </div>
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Channel 3 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <div class="tr-fs13 @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Re-set yourself with a mindfulness workshop</div>
                         <div class="tr-suffix @(ActiveChannel == Tabs.Channel3? "text-white": "" )">Delivered by IPRS</div>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 p-0 ts-grey border border-5 @(ActiveChannel == Tabs.Channel4? "tr-header-channel-selected": "ts-grey" )">
                     <a href="/mainsite/channel/4" class="text-center p-3 ">
-                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Channel4 <span class="bg-danger text-white">LIVE</span> </h5>
+                        <h5 class="mb-0 @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Channel 4 <span class="bg-danger text-white">LIVE</span> </h5>
                         <div class="tr-fs13 @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Managing the cost of living</div>
-                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Delivered by Salary Finance and Supported</div>
+                        <div class="tr-suffix @(ActiveChannel == Tabs.Channel4? "text-white": "" )">Delivered by Salary Finance and Anglian Water</div>
                     </a>
                 </div>
 
@@ -100,7 +100,7 @@
                 <div class="row ">
                     <div class="col-12 pe-0 text-center">
                         <div class="text-center pt-4">
-                            <h6 class="mb-0"><b>Now Watching</b></h6>
+                            <h6 class="mb-0"><b>Coming Up Next</b></h6>
                             <h3 class="tr-fcblue"><b>Happier</b></h3>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                     <div class="col-12 col-md-6 col-lg-3 p-0">
                         <div class=" ts-yellow border border-5 @(BottomChannelId == 1? "tr-footer-channel-selected":"")">
                             <div class="text-center p-3 " @onclick="() => BottomChannelClicked(1)">
-                                <h5 class="mb-0">Channel1  </h5>
+                                <h5 class="mb-0">Channel 1  </h5>
                                 <div class=""><b>Building on your fitness</b></div>
                                 <div class="tr-suffix">Deliverd by mental health at work</div>
                             </div>
@@ -123,7 +123,7 @@
                         <div class=" ts-yellow border border-5 @(BottomChannelId == 2? "tr-footer-channel-selected":"")">
                             <div class="text-center p-3" @onclick="() => BottomChannelClicked(2)">
 
-                                <h5 class="mb-0">Channel2  </h5>
+                                <h5 class="mb-0">Channel 2  </h5>
                                 <div class=""><b>Strech and flex</b></div>
                                 <div class="tr-suffix">Deliverd by IPRS</div>
                             </div>
@@ -134,7 +134,7 @@
                     <div class="col-12 col-md-6 col-lg-3 p-0">
                         <div class=" ts-yellow border border-5 @(BottomChannelId == 3? "tr-footer-channel-selected":"")">
                             <div class="text-center p-3" @onclick="() => BottomChannelClicked(3)">
-                                <h5 class="mb-0">Channel3  </h5>
+                                <h5 class="mb-0">Channel 3  </h5>
                                 <div class=""><b>Healthy lifestyle </b></div>
                                 <div class="tr-suffix">Deliverd by IPRS</div>
                             </div>
@@ -146,7 +146,7 @@
                         <div class=" ts-yellow border border-5 @(BottomChannelId == 4? "tr-footer-channel-selected":"")">
 
                             <div class="text-center p-3" @onclick="() => BottomChannelClicked(4)">
-                                <h5 class="mb-0">Channel4  </h5>
+                                <h5 class="mb-0">Channel 4  </h5>
                                 <div class=""><b>Managing lower back pain</b></div>
                                 <div class="tr-suffix">Deliverd by Salary Finance and Supported</div>
                             </div>
@@ -164,7 +164,7 @@
                     <div class="col-12 col-md-6 col-lg-3 p-0">
                         <div class=" ts-yellow h-100 border border-5 @(BottomChannelId == 1? "tr-footer-channel-selected":"")">
                             <div class="text-center p-3 " @onclick="() => BottomChannelClicked(1)">
-                                <h5 class="mb-0 tr-fs-24">Channel1  </h5>
+                                <h5 class="mb-0 tr-fs-24">Channel 1  </h5>
                                 <div class=" tr-fs-20"><b>Building on your fitness</b></div>
                                 <div class="tr-suffix tr-fs-16">Delivered by mental health at work</div>
                             </div>
@@ -175,7 +175,7 @@
                         <div class=" ts-yellow h-100 border border-5 @(BottomChannelId == 2? "tr-footer-channel-selected":"")">
                             <div class="text-center p-3" @onclick="() => BottomChannelClicked(2)">
 
-                                <h5 class="mb-0 tr-fs-24">Channel2  </h5>
+                                <h5 class="mb-0 tr-fs-24">Channel 2  </h5>
                                 <div class=" tr-fs-20"><b>Stretch and flex</b></div>
                                 <div class="tr-suffix tr-fs-16">Delivered by IPRS</div>
                             </div>
@@ -186,7 +186,7 @@
                     <div class="col-12 col-md-6 col-lg-3 p-0">
                         <div class=" ts-yellow h-100 border border-5 @(BottomChannelId == 3? "tr-footer-channel-selected":"")">
                             <div class="text-center p-3" @onclick="() => BottomChannelClicked(3)">
-                                <h5 class="mb-0 tr-fs-24">Channel3  </h5>
+                                <h5 class="mb-0 tr-fs-24">Channel 3  </h5>
                                 <div class=" tr-fs-20"><b>Healthy lifestyle </b></div>
                                 <div class="tr-suffix tr-fs-16">Delivered by IPRS</div>
                             </div>
@@ -198,7 +198,7 @@
                         <div class=" ts-yellow h-100 border border-5 @(BottomChannelId == 4? "tr-footer-channel-selected":"")">
 
                             <div class="text-center p-3" @onclick="() => BottomChannelClicked(4)">
-                                <h5 class="mb-0 tr-fs-24">Channel4  </h5>
+                                <h5 class="mb-0 tr-fs-24">Channel 4  </h5>
                                 <div class=" tr-fs-20"><b>Managing lower back pain</b></div>
                                 <div class="tr-suffix tr-fs-16">Delivered by Salary Finance and Supported</div>
                             </div>
