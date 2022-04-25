@@ -14,14 +14,45 @@ namespace AngWater.Pages
         [Inject]
         private NavigationManager _navigationManager { get; set; }
 
+        public bool IsEmailExist { get; set; } = true;
+
         private async void LoginUser()
         {
-            var response = await _userService.LoginUserAsync(_loginViewModel);
-
-            if (response > 0)
+            try
             {
-                _navigationManager.NavigateTo("/mainsite/agenda");
+                var response = await _userService.LoginUserAsync(_loginViewModel);
+
+                if (response == null)
+                {
+                    IsEmailExist = false;
+                    return;
+                }
+                else
+                {
+                    IsEmailExist = true;
+                }
+
+                if (response > 0)
+                {
+                    _navigationManager.NavigateTo("/mainsite/agenda");
+                }
             }
+            catch (Exception)
+            {
+
+               
+            }
+            finally
+            {
+                StateHasChanged();
+            }
+           
+        }
+
+        private void ResetForm()
+        {
+            IsEmailExist = true;
+            StateHasChanged();
         }
 
 

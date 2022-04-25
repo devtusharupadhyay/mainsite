@@ -20,7 +20,7 @@
                         <div class="row mx-auto">
                             <div class="col-12 col-lg-7">
 
-                                <EditForm OnValidSubmit="LoginUser" Model="_loginViewModel">
+                                <EditForm OnValidSubmit="LoginUser" Model="_loginViewModel" OnInvalidSubmit="ResetForm">
                                     <DataAnnotationsValidator />
                                     <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-4 m-5">
                                         <h4>
@@ -42,6 +42,7 @@
 
                                         <div>
                                             <ValidationMessage For="() => _loginViewModel.EmailAddress" />
+                                                <span class="text-danger @(IsEmailExist? "d-none": "d-block")">This Email Address is not registered. </span>
                                         </div>
 
                                         <div class="text-center mt-4">
